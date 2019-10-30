@@ -1,144 +1,55 @@
 import turtle
+import math
+from math import sin
+from math import radians
+from tkinter import *
 
+root = Tk()
 turtle.shape('turtle')
+
 
 def turtleCircle():
     for x in range(0, 120):
         turtle.forward(8)
         turtle.left(3)
 
+
 def turtleSquare10():
-    for x in range(0, 4):
-        turtle.pendown()
-        turtle.forward(10)
-        turtle.left(90)
-        turtle.penup()
-    turtle.goto(-5,-5)
-
-    for x in range(0, 4):
-        turtle.pendown()
-        turtle.forward(20)
-        turtle.left(90)
-        turtle.penup()
-    turtle.goto(-10, -10)
-
-    for x in range(0, 4):
-        turtle.pendown()
-        turtle.forward(30)
-        turtle.left(90)
-        turtle.penup()
-    turtle.goto(-15, -15)
-
-    for x in range(0, 4):
-        turtle.pendown()
-        turtle.forward(40)
-        turtle.left(90)
-        turtle.penup()
-    turtle.goto(-20, -20)
-
-    for x in range(0, 4):
-        turtle.pendown()
-        turtle.forward(50)
-        turtle.left(90)
-        turtle.penup()
-    turtle.goto(-25, -25)
-
-    for x in range(0, 4):
-        turtle.pendown()
-        turtle.forward(60)
-        turtle.left(90)
-        turtle.penup()
-    turtle.goto(-30, -30)
-
-    for x in range(0, 4):
-        turtle.pendown()
-        turtle.forward(70)
-        turtle.left(90)
-        turtle.penup()
-    turtle.goto(-35, -35)
-
-    for x in range(0, 4):
-        turtle.pendown()
-        turtle.forward(80)
-        turtle.left(90)
-        turtle.penup()
-    turtle.goto(-40, -40)
-
-    for x in range(0, 4):
-        turtle.pendown()
-        turtle.forward(90)
-        turtle.left(90)
-        turtle.penup()
-    turtle.goto(-45, -45)
-
-    for x in range(0, 4):
-        turtle.pendown()
-        turtle.forward(100)
-        turtle.left(90)
-        turtle.penup()
-    turtle.goto(-50, -50)
+    a = 10
+    b = -5
+    for y in range(0,10):
+        for x in range(0, 4):
+            turtle.pendown()
+            turtle.forward(a)
+            turtle.left(90)
+            turtle.penup()
+        turtle.goto(b, b)
+        a += 10
+        b -= 5
 
 
 def turtleFlover():
-    for x in range(0, 180):
-        turtle.forward(1)
-        turtle.left(2)
-    for x in range(0, 180):
-        turtle.forward(1)
-        turtle.right(2)
-    turtle.left(46)
-    for x in range(0, 180):
-        turtle.forward(1)
-        turtle.left(2)
-    for x in range(0, 180):
-        turtle.forward(1)
-        turtle.right(2)
-    turtle.left(46)
-    for x in range(0, 180):
-        turtle.forward(1)
-        turtle.left(2)
-    for x in range(0, 180):
-        turtle.forward(1)
-        turtle.right(2)
-    turtle.left(46)
-    for x in range(0, 180):
-        turtle.forward(1)
-        turtle.left(2)
-    for x in range(0, 180):
-        turtle.forward(1)
-        turtle.right(2)
-
+    for y in range(0, 4):
+        for x in range(0, 180):
+            turtle.forward(1)
+            turtle.left(2)
+        for x in range(0, 180):
+            turtle.forward(1)
+            turtle.right(2)
+        turtle.left(45)
 
 
 def turtleButterFly():
     turtle.right(90)
-    for x in range(0, 120):
-        turtle.forward(1)
-        turtle.left(3)
-    for x in range(0, 120):
-        turtle.forward(1)
-        turtle.right(3)
-
-    for x in range(0, 120):
-        turtle.forward(2)
-        turtle.left(3)
-    for x in range(0, 120):
-        turtle.forward(2)
-        turtle.right(3)
-
-    for x in range(0, 120):
-        turtle.forward(3)
-        turtle.left(3)
-    for x in range(0, 120):
-        turtle.forward(3)
-        turtle.right(3)
-
-    for x in range(0, 120):
-        turtle.forward(4)
-        turtle.left(3)
-    for x in range(0, 120):
-        turtle.forward(4)
-        turtle.right(3)
+    n = 1
+    for y in range(0, 4):
+        for x in range(0, 120):
+            turtle.forward(n)
+            turtle.left(3)
+        for x in range(0, 120):
+            turtle.forward(n)
+            turtle.right(3)
+        n += 1
 
 
 def turtleSpider():
@@ -152,73 +63,20 @@ def turtleSpider():
         turtle.right(210)
 
 
-
-
 def turtleTwister():
-    for x in range(0, 30):
-        turtle.forward(1)
-        turtle.left(6)
-    for x in range(0, 36):
-        turtle.forward(1)
-        turtle.left(5)
-    for x in range(0, 45):
-        turtle.forward(1)
-        turtle.left(4)
-    for x in range(0, 60):
-        turtle.forward(1)
-        turtle.left(3)
-    for x in range(0, 90):
-        turtle.forward(1)
-        turtle.left(2)
-    for x in range(0, 180):
-        turtle.forward(1)
-        turtle.left(1)
+    for x in range(180):
+        turtle.forward(2 * x / 3.14)
+        turtle.left(16)
 
 
 def turtleSquareTwister():
-    for x in range(0,2):
-        turtle.forward(20)
-        turtle.left(90)
-    turtle.forward(10)
-    for x in range(0,2):
-        turtle.forward(30)
-        turtle.left(90)
-    turtle.forward(10)
-    for x in range(0,2):
-        turtle.forward(40)
-        turtle.left(90)
-    turtle.forward(10)
-    for x in range(0,2):
-        turtle.forward(50)
-        turtle.left(90)
-    turtle.forward(10)
-    for x in range(0,2):
-        turtle.forward(60)
-        turtle.left(90)
-    turtle.forward(10)
-    for x in range(0, 2):
-        turtle.forward(70)
-        turtle.left(90)
-    turtle.forward(10)
-    for x in range(0, 2):
-        turtle.forward(80)
-        turtle.left(90)
-    turtle.forward(10)
-    for x in range(0, 2):
-        turtle.forward(90)
-        turtle.left(90)
-    turtle.forward(10)
-    for x in range(0, 2):
-        turtle.forward(100)
-        turtle.left(90)
-    turtle.forward(10)
-    for x in range(0, 2):
-        turtle.forward(110)
-        turtle.left(90)
-    turtle.forward(10)
-    for x in range(0, 2):
-        turtle.forward(120)
-        turtle.left(90)
+    n = 20
+    for y in range(0,20):
+        for x in range(0, 2):
+            turtle.forward(n)
+            turtle.left(90)
+        turtle.forward(10)
+        n += 10
 
 
 def turtleSmile():
@@ -227,7 +85,7 @@ def turtleSmile():
     turtleCircle()
     turtle.end_fill()
     turtle.penup()
-    turtle.goto (-80, 180)
+    turtle.goto(-80, 180)
     turtle.pendown()
     turtle.color("blue")
     turtle.begin_fill()
@@ -258,26 +116,65 @@ def turtleSmile():
         turtle.right(4)
 
 
+def turtleDick():
+    turtle.right(90)
+    for x in range(0, 120):
+        turtle.forward(2)
+        turtle.left(3)
+    for x in range(0, 120):
+        turtle.forward(2)
+        turtle.right(3)
+    turtle.penup()
+    turtle.left(180)
+    for x in range(0, 30):
+        turtle.forward(2)
+        turtle.left(3)
+    turtle.pendown()
+    turtle.right(90)
+    turtle.forward(200)
+    for x in range(0, 60):
+        turtle.forward(2)
+        turtle.right(3)
+    turtle.right(90)
+    turtle.forward(76)
+    turtle.right(180)
+    turtle.penup()
+    turtle.forward(38)
+    turtle.left(90)
+    turtle.pendown()
+    turtle.forward(38)
+    turtle.penup()
+    turtle.right(180)
+    turtle.forward(38)
+    turtle.left(90)
+    turtle.forward(38)
+    turtle.right(90)
+    turtle.pendown()
+    turtle.forward(200)
 
 
+# r = z / (2 * (sin(360 / (2 * n))))
+# z = 2 * r * sin(radians(360) / (2 * n))
 
-turtleSmile()
+def turtle_nCorners():
+    r = 30
+    n = 3
+    for y in range(0, 10):
+        degr = 90 + ((360 / n) / 2)
+        z = 2 * r * sin(radians(180) / n)
+        # z = r / 2
+        turtle.left(degr)
+        for x in range(0, n):
+            turtle.forward(z)
+            turtle.left(360 / n)
+        turtle.penup()
+        turtle.right(degr)
+        turtle.forward(15)
+        turtle.pendown()
+        r += 15
+        n += 1
 
 
+turtle_nCorners()
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+root.mainloop()
