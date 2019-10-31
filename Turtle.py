@@ -174,6 +174,28 @@ def turtle_nCorners():
         r += 15
         n += 1
 
+def turtle_el_pruzhino():
+    turtle.left(90)
+    for y in range(0, 4):
+        for x in range(0, 39):
+            turtle.forward(5)
+            turtle.right(5)
+        for x in range(0, 20):
+            turtle.forward(1)
+            turtle.right(8)
+
+
+def turtle_star5(n):
+    turtle.left(180)
+    for x in range(n):
+        turtle.forward(200)
+        turtle.left((360 / (n / 2)))
+
+def turtle_star11(n):
+    for x in range(n):
+        turtle.forward(200)
+        turtle.left((360 / (n / 6)))
+
 
 turtle_nCorners()
 
