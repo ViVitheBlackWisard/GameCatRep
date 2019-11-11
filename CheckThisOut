@@ -1,0 +1,48 @@
+import turtle
+turtle.shape("turtle")
+
+
+def turtle_boo():
+    turtle.right(152)
+    for i in range(0, 76):
+        turtle.forward(5)
+        turtle.left(3)
+    turtle.right(152)
+    for i in range(0, 76):
+        turtle.forward(5)
+        turtle.left(3)
+    turtle.penup()
+    turtle.goto(260, -100)
+    turtle.pendown()
+    turtle.fillcolor("pink")
+    turtle.begin_fill()
+    for i in range(0, 120):
+        turtle.forward(1)
+        turtle.left(3)
+    turtle.end_fill()
+    turtle.penup()
+    turtle.goto(255, -113)
+    turtle.pendown()
+    for i in range(0, 36):
+        turtle.forward(1)
+        turtle.left(10)
+    turtle.penup()
+    turtle.goto(35, -100)
+    turtle.pendown()
+    turtle.fillcolor("pink")
+    turtle.begin_fill()
+    for i in range(0, 120):
+        turtle.forward(1)
+        turtle.left(3)
+    turtle.end_fill()
+    turtle.penup()
+    turtle.goto(27, -113)
+    turtle.pendown()
+    for i in range(0, 36):
+        turtle.forward(1)
+        turtle.left(10)
+    turtle.hideturtle()
+
+
+turtle_boo()
+turtle.mainloop()
